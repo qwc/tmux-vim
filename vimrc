@@ -76,12 +76,12 @@ function! BuildYCM(info)
   " - status: 'installed', 'updated', or 'unchanged'
   " - force:  set on PlugInstall! or PlugUpdate!
   if a:info.status == 'installed' || a:info.status == 'updated' || a:info.force
-    " !./install.sh --clang-completer
+    " !./install.py --clang-completer
     !./install.py --clang-completer --gocode-completer
   endif
 endfunction
 
-" Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
+Plug 'Valloric/YouCompleteMe', { 'do': function('BuildYCM') }
 
 
 call plug#end()
@@ -106,6 +106,9 @@ set hls
 
 " Wrap text instead of being on one line
 set lbr
+
+" for colorschemes
+set t_Co=256
 
 " Change colorscheme
 colorscheme molokai
@@ -214,10 +217,10 @@ let g:syntastic_error_symbol = '✗'
 let g:syntastic_style_error_symbol = '✠'
 let g:syntastic_warning_symbol = '∆'
 let g:syntastic_style_warning_symbol = '≈'
+
+let g:syntastic_python_flake8_args="--ignore=E501"
 let g:syntastic_python_checkers=['pep8', 'pylint']
 let g:syntastic_python_pylint_args="--disable=C"
-
-" let g:syntastic_python_flake8_args="--ignore=E501"
 
 " Change tab completion settings
 "
@@ -346,14 +349,14 @@ let g:tagbar_type_go = {
 
 " Adjust NERDTree window width
 "
-let g:NERDTreeWinSize=60
+let g:NERDTreeWinSize=50
 
 " Easier split navigation
 "
-"nnoremap <C-ö> <C-W><C-K>
-"nnoremap <C-l> <C-W><C-J>
-"nnoremap <C-k> <C-W><C-H>
-"nnoremap <C-j> <C-W><C-H>
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 " More natural split opening
 "
@@ -502,7 +505,6 @@ nnoremap gr gd[{V%::s/<C-R>///gc<left><left><left>
 "
 " " For global replace
 nnoremap gR gD:%s/<C-R>///gc<left><left><left>
-
 "
 " EOF
 "
