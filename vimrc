@@ -11,6 +11,7 @@ Plug 'bling/vim-airline' "lean & mean status/tabline for vim that's light as air
 Plug 'scrooloose/nerdtree' "A tree explorer plugin for vim.
 Plug 'Xuyuanp/nerdtree-git-plugin' "Git infos in nerdtree
 Plug 'fatih/vim-go' "Go development plugin for Vim.
+Plug 'hexdigest/gounit-vim' "Go unit test generation
 Plug 'myusuf3/numbers.vim' "numbers.vim is a vim plugin for better line numbers.
 Plug 'majutsushi/tagbar' "Vim plugin that displays tags in a window, ordered by scope.
 Plug 'xolox/vim-misc' "Miscellaneous auto-load Vim scripts.
@@ -28,14 +29,14 @@ Plug 'tpope/vim-unimpaired' "unimpaired.vim: pairs of handy bracket mappings.
 Plug 'tpope/vim-repeat' "repeat.vim: enable repeating supported plugin maps with '.'.
 Plug 'mhinz/vim-startify' "The fancy start screen for Vim.
 Plug 'tpope/vim-commentary' "commentary.vim: comment stuff out.
-Plug 'jlanzarotta/bufexplorer' "BufExplorer Plugin for Vim.
+" Plug 'jlanzarotta/bufexplorer' "BufExplorer Plugin for Vim.
 Plug 'tpope/vim-dispatch' "dispatch.vim: asynchronous build and test dispatcher.
 Plug 'wincent/ferret' "Enhanced multi-file search for Vim.
 Plug 'kshenoy/vim-signature' "Plugin to toggle, display and navigate marks.
 Plug 'joonty/vdebug' "Multi-language DBGP debugger client for Vim (PHP, Python, Perl, Ruby, etc.).
 Plug 'bronson/vim-visual-star-search' "Start a * or # search from a visual block
 Plug 'vim-scripts/taglist.vim' "Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc).
-Plug 'vimwiki/vimwiki' "Personal Wiki for Vim.
+" Plug 'vimwiki/vimwiki' "Personal Wiki for Vim.
 Plug 'wincent/loupe' "Enhanced in-file search for Vim
 Plug 'digitaltoad/vim-pug' "Vim Pug (formerly Jade) template engine syntax highlighting and indention
 Plug 'mtscout6/syntastic-local-eslint.vim' "Prefer local repo install of eslint over global install with syntastic
@@ -55,6 +56,9 @@ Plug 'mrk21/yaml-vim'
 Plug 'xolox/vim-session'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'Rykka/riv.vim'
+Plug 'junegunn/vim-peekaboo'
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 Plug '~/.fzf'
 " Plug 'tpope/vim-git'
 " Plug 'vim-scripts/Gundo' "vim-scripts/Gundo.
